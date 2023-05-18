@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { MainLayout } from '@/components/layouts/MainLayout'
-import { DarkLayout } from '@/components/layouts/DarkLayout'
+
+import { MainLayout } from '../../components/layouts/MainLayout'
+import { DarkLayout } from '../../components/layouts/DarkLayout'
 
 export default function About(){
   return (
