@@ -7,7 +7,7 @@ export default function Contact(){
       <h1>Contact Page</h1>
 
       <h1 className={'title'}>
-        Ir a <Link href="/">Home</Link>
+        Ir a <Link href="/pricing">Pricing</Link>
       </h1>
 
       <p className={'description'}>
