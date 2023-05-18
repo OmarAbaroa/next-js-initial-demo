@@ -1,6 +1,6 @@
-import styles from '../styles/about.module.css'
-import Image from 'next/image'
 import Head from 'next/head'
+import Link from 'next/link'
+import styles from '../styles/about.module.css'
 
 export default function About(){
   return (
@@ -12,29 +12,16 @@ export default function About(){
       </Head>
       
       <main className={styles.main}>
-        <div className={styles.center}>
-          <p>
-            <Image
-              className={styles.logo}
-              src="/next.svg"
-              alt="Next.js Logo"
-              width={180}
-              height={37}
-              priority
-            />
-          </p>
-        </div>
+        <h1>About Page</h1>
+          
+          <h1 className={'title'}>
+            Ir a <Link href="/">Home</Link>
+          </h1>
 
-        <div style={{textAlign: "center" }}>
-          <a href='/'>
-            <h2>
-              Ir a {' '}
-              <text style={{color: "blue"}}>
-                Home
-              </text>
-            </h2>
-          </a>
-        </div>
+          <p className={'description'}>
+            Get started by editing{' '}
+            <code className={'code'}>pages/about.jsx</code>
+          </p>
       </main>
     </div>
     
