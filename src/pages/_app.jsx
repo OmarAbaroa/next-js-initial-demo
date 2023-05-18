@@ -1,19 +1,16 @@
-import { Inter } from 'next/font/google'
-import styles from '../styles/globals.css'
-import Head from 'next/head'
-
-const inter = Inter({ subsets: ['latin'] })
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
+
+  const getLayout = Component.getLayout || ( (page) => page);
+  /*
   return (
-    <div className={inter.className}>
-      <Head>
-        <meta name="description" content="Initial demo - Omar" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
       <Component { ...pageProps } />
-    </div>
+    </>
   )
+  */
+ return getLayout( <Component { ...pageProps} />)
 }
 
 export default MyApp
